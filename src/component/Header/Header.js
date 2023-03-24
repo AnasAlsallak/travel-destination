@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom'
+import React from "react";
+import '../Header/Header.css';
+import Navbar from "../Navbar/Navbar";
 
 
 function Header (){
     return(
-        <>
-        <h1>MY TOUR APP</h1>
-        <nav>
-            <Link to="/">Home</Link>
-        </nav>
-        </>
+        <div className="head">
+        <h1>My TOURS Website</h1>
+        <Navbar />
+        </div>
     )
 }
 

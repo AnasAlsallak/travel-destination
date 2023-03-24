@@ -7,12 +7,11 @@ const tourdata = require('../../data/db.json');
 
 function Home (){
     return (
-        <>
-        <h1>Anas Alsallak</h1>
+        <div className="home">
         <Header/>
         <Tours arrData={tourdata}/>
         <Footer/>
-        </>
+        </div>
     )
 }
 
