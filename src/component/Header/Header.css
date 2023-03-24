@@ -1,0 +1,7 @@
+.head {
+    display: flex;
+    background-color: #1c5b38;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+}

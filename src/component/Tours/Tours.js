@@ -1,18 +1,25 @@
-function Tours(travs) {
+import React from "react";
+import '../Tours/Tours.css'
+import Tour from "./tour/Tour";
+const dataBase = require('../../data/db.json');
+
+
+
+function Tours () {
     return (
-        <>
-            {travs.arrData.map((item) => {
+
+        <div className="tours">
+            {dataBase.map((item) => {
                 return (
                     <div key={item.id}>
-                        <h3>{item.name}</h3>
-                        <img src={item.image} alt={item.name}></img>
+                        <Tour tour={item} />
                     </div>
                 )
-            })}
-
-        </>
+            })
+            }
+        </div>
     )
-
 }
+
 
 export default Tours;
